@@ -1,0 +1,12 @@
+nav{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.455);  
+    backdrop-filter: blur(20px);
+}
+main{
+    height: 90vh;
+    background-image: url(../img/istockphoto-1345893732-170667a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
