@@ -1,4 +1,4 @@
-let divine = function(){
-    console.log('woow')
-}
-divine()
+document.addEventListener('scroll',function(){
+
+})
+
