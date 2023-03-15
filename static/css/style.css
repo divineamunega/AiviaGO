@@ -8,6 +8,7 @@ nav{
     height:13vh; 
     width: 90% !important;
     border-bottom: 1px solid white;
+    transition: 4s;
 }
 @media screen and (max-width:991px){
     .offcanvas{
@@ -143,5 +144,5 @@ nav{
 }
 .types .col-12 div{
     height: 150px;
-    background-color: red;
+    background-color: black;
 }
