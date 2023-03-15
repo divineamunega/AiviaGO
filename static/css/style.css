@@ -1,12 +1,187 @@
-nav{
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.455);  
-    backdrop-filter: blur(20px);
+:root{
+    --font1:'Roboto Condensed', sans-serif;
+    --brand-font:'Merriweather', serif;
+    --color1:gold;
 }
-main{
-    height: 90vh;
-    background-image: url(../img/istockphoto-1345893732-170667a.jpg);
+nav{
+    /* background-color: rgba(0, 0, 0, 0.455);  */
+    height:13vh; 
+    width: 90% !important;
+    border-bottom: 1px solid white;
+}
+@media screen and (max-width:991px){
+ .offcanvas{
+        background-color: rgba(0, 0, 0, 0) !important;
+        backdrop-filter: blur(10px);
+    }
+    nav{
+        width: 100% !important;
+        height: fit-content !important;
+    }   
+}
+.navbar-brand,.offcanvas-title{
+    font-family: var(--brand-font);
+    font-size: 30px !important;
+    color: white;
+}
+.dropdown .dropdown-menu{
+    max-height: 300px;
+}
+.book-now-btn{
+    padding: 5px 20px;
+    border: 1px solid var(--color1);
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color1);
+    position: relative;
+    display: block;
+    color: gold;
+}
+.book-now-btn:hover{
+    color: white;
+}
+.book-now-btn:hover::before{
+    content: '';
+    width: 100% !important;
+    height: 100% !important;
+    background-color: gold;
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    border-radius: 10px;
+    animation-name: width;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+}
+@keyframes width {
+    from{
+        transform:scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+.nav-link{
+    text-transform:uppercase;
+    font-family:var(--font1) ;
+}
+.landing-img-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/SLIDE_04.jpg);
+    background-position: left;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    user-zoom:fixed;
+}
+.landing-img-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/SLIDE_02\ \(1\).jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing-img-3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/SLIDE_01.jpg);
+    background-position: left;
+    transform: scale(1.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+@media screen and (max-width:576px){
+    .landing-text-head{
+        font-size: 2.5rem !important;
+    }
+    .landing-text{
+        font-size: 1em !important;
+    }
+}
+.landing-text-head{
+    /* font-family: var(--font1); */
+    color: white;
+    font-size: 3.4rem;
+}
+.landing-text{
+    color: white;
+    font-size: 1.2em;
+}
+.special-offer{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+}
+.special-offer::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border:1px solid var(--color1);
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: none;
+}
+.special-offer::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border:1px solid var(--color1);
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: none;
+}
+
+.special-offer:hover::before{
+    animation: turn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width:50px;
+    height: 50px;
+    left: 30%;
+    animation: turn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.special-offer:hover::after{
+    animation: turn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    width:50px;
+    height: 50px;
+    left: 20%;
+    animation: turn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes turn {
+    0%{
+        transform:rotate(0deg);
+    }   
+    25%{
+        transform: rotate(90deg);
+    }   
+    50%{
+        transform: rotate(180deg);
+    }   
+    100%{
+        transform: rotate(270deg);
+    }  
 }
