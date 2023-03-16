@@ -10,6 +10,12 @@ nav{
     border-bottom: 1px solid white;
     transition: 4s;
 }
+*::selection{
+    background-color: black;
+}
+a,btn{
+    user-select: none;
+}
 @media screen and (max-width:991px){
     .offcanvas{
         background-color: rgba(0, 0, 0, 0) !important;
@@ -142,7 +148,31 @@ nav{
     transition: .3s;
     background-color: rgba(0,0,0,0);
 }
-.types .col-12 div{
+.types .col-12 > div{
     height: 150px;
     background-color: black;
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.types .pic-cont{
+    width:100px !important;
+    height:100px !important;
+    border-radius: 50%;
+    transition: .3s;
+    margin-right: 10px;
+}
+.types .pic-cont img{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+}
+.types .text-cont h3, .types .text-cont a{
+    color: white;
+    text-decoration: none;
+}
+.types .col-12 > div:hover .pic-cont{
+    transform: scale(1.1) !important;
+    transition: .3s;
 }
