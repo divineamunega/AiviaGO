@@ -22,6 +22,7 @@
       rel="shortcut icon"
       href="static/img/favicon.png"
       type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark fixed-top navbar-expand-md mx-auto">
@@ -64,9 +65,7 @@
                 <a class="nav-link" href="#">Gallery</a>
               </li>
               <li class="nav-item mx-lg-3 mx-auto">
-                <a class="nav-link" aria-current="page" href="#"
-                  >Contact</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
             <div class="book-Now justify-content-end align-items-center d-flex">
@@ -79,7 +78,7 @@
     <main>
       <div
         id="carouselId"
-        class="carousel slide carousel-fade"
+        class="carousel slide carousel-fade mb-0"
         data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item landing-img-1 active">
@@ -139,12 +138,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="container-fluid types mt-4">
+      <div class="container-fluid types" style="padding: 0; margin-top: 0">
         <div class="row g-0 align-items-center">
-          <div class="col-12 col-md-6 col-lg-4  my-1">
+          <div class="col-12 col-md-6 col-lg-4 my-0">
             <div>
               <div class="pic-cont">
-                <img src="static/img/service_01-150x150.jpg" alt="">
+                <img src="static/img/service_01-150x150.jpg" alt="" />
               </div>
               <div class="text-cont">
                 <h3><a href="#">Bussiness Charter</a></h3>
@@ -152,21 +151,20 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4  my-1">
+          <div class="col-12 col-md-6 col-lg-4 my-0">
             <div
               style="
                 border-left: 1px solid white;
                 border-right: 1px solid white;
               ">
-              <div class="pic-cont">
-              </div>
+              <div class="pic-cont"></div>
               <div class="text-cont">
                 <h3><a href="#">Bussiness Charter</a></h3>
                 <div class="text">Lorem ipsum dolor sit amet consectetur.</div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4  my-1">
+          <div class="col-12 col-md-6 col-lg-4 my-0">
             <div>
               <div class="pic-cont"></div>
               <div class="text-cont">
@@ -178,12 +176,61 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid comfort">
-        
+
+      <!-- Comfort Section Starts -->
+      <div class="container-fluid comfort px-lg-5 px-md-2 px-sm-0 px-0">
+        <h4 class="text-center">Jet Comfort</h4>
+        <h2 class="text-center">Discover Charter Benefits</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+          cumque.
+        </p>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-12" data-aos="zoom-in">
+            <div class="image-cont">
+              <img src="static/img/discover.jpg" alt="Discover" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="container-fluid benefit">
+              <div class="row g-4">
+                <div class="col-md-6 col-12" 
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                  <div></div>
+                </div>
+                <div
+                  class="col-md-6 col-12"
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                  <div></div>
+                </div>
+                <div class="col-md-6 col-12"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                  <div></div>
+                </div>
+                <div class="col-md-6 col-12"                   data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Comfort Section Ends -->
     </main>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
   <script src="static/js/script.js"></script>
   <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
