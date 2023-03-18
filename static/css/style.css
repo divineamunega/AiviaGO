@@ -8,9 +8,9 @@ nav {
   height: 13vh;
   width: 90%;
   border-bottom: 1px solid white;
-  transition: 4s;
+  transition: 0.3s;
 }
-main{
+main {
   overflow: hidden;
 }
 *::selection {
@@ -20,22 +20,25 @@ a,
 btn {
   user-select: none;
 }
+.offcanvas {
+  backdrop-filter: blur(0px);
+}
 @media screen and (max-width: 991px) {
   .offcanvas {
-    background-color: rgba(0, 0, 0, 0) !important;
-  }
-  nav {
-    width: 100% !important;
-    height: fit-content !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
 }
-@media screen and (max-width: 576px) {
+nav .active {
+  color: gold !important;
+}
+@media screen and (max-width: 767px) {
   .offcanvas {
     backdrop-filter: blur(10px) !important;
   }
 }
-.offcanvas {
-  backdrop-filter: blur(0px);
+nav {
+  position: sticky;
+  top: 10px;
 }
 .navbar-brand,
 .offcanvas-title {
@@ -100,7 +103,7 @@ btn {
 .landing-img-2 {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/SLIDE_02\ \(1\).jpg);
+  background-image: url("../img/SLIDE_02\ \(1\).jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,11 +134,24 @@ btn {
   /* font-family: var(--font1); */
   color: white;
   font-size: 3.4rem;
+  -webkit-animation: fade-in 4s both;
+  animation: fade-in 4s both;
 }
 .landing-text {
   color: white;
   font-size: 1.2em;
+  -webkit-animation: fade-in 4s both;
+  animation: fade-in 4s both;
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .special-offer {
   color: white;
   text-decoration: none;
@@ -182,52 +198,41 @@ btn {
   transform: scale(1.1) !important;
   transition: 0.3s;
 }
-.comfort .col-12 > div {
-  height: 650px;
+.comfort {
+  /* background-color: rgb(246, 220, 186); */
+  padding-top: 100px;
+  height: fit-content;
+  padding-bottom: 100px;
 }
-.comfort{
-    background-color: antiquewhite;
-    padding-top: 100px;
-    height: fit-content;
-    padding-bottom: 100px;
+.comfort .image-cont {
+  --height: 80% !important;
+  width: calc(1.219 * var(--height)) !important;
+  height: var(--height) !important;
 }
-.comfort .image-cont{
-  --height:100%;
-  width: calc(1.03 * var(--height));
-  height: var(--height);
-}
-.comfort .image-cont > img{
-  height: 100%;
-  width: 100%;
+.comfort .image-cont > img {
+  height: 100% !important;
+  width: 100% !important;
 }
 .comfort h4,
 .comfort h2 {
-    font-family: var(--font1);
-    text-transform: uppercase;
+  font-family: var(--font1);
+  text-transform: uppercase;
 }
-.comfort h4{
-    font-weight: 800;
+.comfort h4 {
+  font-weight: 800;
 }
-.comfort h2{
-    font-weight: 600;
+.comfort h2 {
+  font-weight: 600;
 }
-.benefit .col-12 > div{
-  height: calc(650px/2);
+.benefit .col-12 > div {
+  height: calc(450px / 2);
   background-color: white;
+  box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 991px) {
+  .comfort .image-cont {
+    --height: 70% !important;
+    width: calc(1.219 * var(--height)) !important;
+  }
+}
