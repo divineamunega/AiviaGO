@@ -16,6 +16,9 @@ main {
 *::selection {
   background-color: black;
 }
+*{
+  scrollbar-width: thin;
+}
 a,
 btn {
   user-select: none;
@@ -189,14 +192,23 @@ nav {
   height: 100% !important;
   border-radius: 50%;
 }
+.types .text-cont{
+  width: 70%;
+}
 .types .text-cont h3,
 .types .text-cont a {
   color: white;
   text-decoration: none;
 }
+.types .text-cont a:hover{
+  color: var(--color1);
+}
 .types .col-12 > div:hover .pic-cont {
   transform: scale(1.1) !important;
   transition: 0.3s;
+}
+.types .text {
+  color: white;
 }
 .comfort {
   /* background-color: rgb(246, 220, 186); */
@@ -229,6 +241,16 @@ nav {
   background-color: white;
   box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 0px;
+  transition: .3s;
+}
+.benefit .col-12 > div:hover{
+  transform: scale(1.05);
+  transition: .3s;
 }
 @media screen and (max-width: 991px) {
   .comfort .image-cont {
@@ -236,3 +258,41 @@ nav {
     width: calc(1.219 * var(--height)) !important;
   }
 }
+.comfort .col-12 h3{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: var(--font1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.comfort .col-12 p{
+  text-align: center;
+}
+.stats{
+  width: 100%;
+  background-image: url('../img/stats.png');
+  background-color: black;
+  height: fit-content;
+  background-attachment: fixed;
+}
+.stats .col-12 div{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:576px){
+  .stats .col-12 div{
+    height: 200px;
+  }
+}
+.stats .col-12 .number{
+  color: gold;
+  font-size: 5em;
+}
+.stats-text{
+  color: white;
+  font-size: 1.3em;
+}
+
