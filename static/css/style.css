@@ -16,7 +16,7 @@ main {
 *::selection {
   background-color: black;
 }
-*{
+* {
   scrollbar-width: thin;
 }
 a,
@@ -192,7 +192,7 @@ nav {
   height: 100% !important;
   border-radius: 50%;
 }
-.types .text-cont{
+.types .text-cont {
   width: 70%;
 }
 .types .text-cont h3,
@@ -200,7 +200,7 @@ nav {
   color: white;
   text-decoration: none;
 }
-.types .text-cont a:hover{
+.types .text-cont a:hover {
   color: var(--color1);
 }
 .types .col-12 > div:hover .pic-cont {
@@ -246,11 +246,11 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 20px 20px 0px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.benefit .col-12 > div:hover{
+.benefit .col-12 > div:hover {
   transform: scale(1.05);
-  transition: .3s;
+  transition: 0.3s;
 }
 @media screen and (max-width: 991px) {
   .comfort .image-cont {
@@ -258,41 +258,106 @@ nav {
     width: calc(1.219 * var(--height)) !important;
   }
 }
-.comfort .col-12 h3{
+.comfort .col-12 h3 {
   text-align: center;
   font-size: 1.3em;
   font-family: var(--font1);
   text-transform: uppercase;
   font-weight: 700;
 }
-.comfort .col-12 p{
+.comfort .col-12 p {
   text-align: center;
 }
-.stats{
+.stats {
   width: 100%;
-  background-image: url('../img/stats.png');
-  background-color: black;
   height: fit-content;
   background-attachment: fixed;
+  background-color: black;
 }
-.stats .col-12 div{
+.stats .col-12 div {
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width:576px){
-  .stats .col-12 div{
+@media screen and (max-width: 576px) {
+  .stats .col-12 div {
     height: 200px;
   }
 }
-.stats .col-12 .number{
+.stats .col-12 .number {
   color: gold;
   font-size: 5em;
 }
-.stats-text{
+.stats-text {
   color: white;
   font-size: 1.3em;
 }
+.book {
+  background-image: url("../img/stats.png");
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 100px;
+}
+.book .col-12 > div:nth-child(1) {
+  background-color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.book .nav .nav-link {
+  font-family: var(--font1);
+  font-weight: 700;
+  color: gold;
+}
+.book .nav .active {
+}
 
+.book h4,
+.book h2 {
+  font-family: var(--font1);
+  text-transform: uppercase;
+  color: white;
+}
+.book h4 {
+  font-weight: 800;
+  padding-top: 100px;
+}
+.book h2 {
+  font-weight: 600;
+}
+.book .tab-content {
+  background-color: white;
+  margin-top: 20px;
+}
+.book .form-label {
+  font-family: var(--font1);
+  font-size: 1.1em;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+.book .form-label,
+.book .form-control,
+.book.form-select {
+  border-radius: 30px !important;
+}
+.book .form-control:focus,
+.book .form-control:focus,
+.book .form-select:focus {
+  box-shadow: 1px 1px 5px 0px
+   rgba(0, 0, 0, 0.453) !important;
+  border: 1px solid gold !important;
+}
+.book .submit{
+  background-color: gold;
+  border: 1px solid gold;
+}
+
+.book .submit:hover{
+  background-color: white;
+  border: 1px solid gold;
+  color: gold;
+}
+.book .submit:hover::after{
+  content: '>';
+}
