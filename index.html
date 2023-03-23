@@ -23,7 +23,8 @@
       href="static/img/favicon.png"
       type="image/x-icon" />
     <link rel="stylesheet" href="static/css/aos.css" />
-    <link rel="stylesheet" href="static/css/animations.css">
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/flickity.min.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark fixed-top navbar-expand-md mx-auto">
@@ -264,7 +265,8 @@
       <!-- Stats Starts -->
       <div class="stats container-fluid px-lg-5 px-md-2 px-sm-0 px-0">
         <div class="row">
-          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
+          <div
+            class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="300" data-speed="200">0</span
@@ -273,7 +275,8 @@
               <p class="stats-text">Professional Pilots</p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
+          <div
+            class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="10" data-speed="10">0</span>k+
@@ -281,7 +284,8 @@
               <p class="stats-text">Passengers Carried</p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
+          <div
+            class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="320" data-speed="200"></span>
@@ -289,7 +293,8 @@
               <p class="stats-text">World Airports</p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
+          <div
+            class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="400" data-speed="200">0</span>
@@ -304,7 +309,7 @@
       <!-- Book Flight Starts -->
       <div class="book container-fluid px-lg-5 px-md-2 px-sm-0 px-0 mt-5">
         <h4 class="px-3 px-md-0">GET YOUR FLIGHT</h4>
-          <h2 class="px-3 px-md-0">Online request for private flight</h2>
+        <h2 class="px-3 px-md-0">Online request for private flight</h2>
         <div class="row">
           <div class="col-12 col-md-12 col-lg-7 px-md-3 px-4">
             <div>
@@ -354,24 +359,28 @@
                         placeholder="City Airport or Name" />
                     </div>
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label"
-                        >TO</label
-                      >
+                      <label for="inputPassword4" class="form-label">TO</label>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="City Airport or name" />
-                      </div>
+                    </div>
                     <div class="col-md-3">
-                      <label for="inputCityDepartDate" class="form-label">Depart Date</label>
+                      <label for="inputCityDepartDate" class="form-label"
+                        >Depart Date</label
+                      >
                       <input type="date" class="form-control" id="inputCity" />
                     </div>
                     <div class="col-md-3">
-                      <label for="inputReturnDate" class="form-label">Return Date</label>
+                      <label for="inputReturnDate" class="form-label"
+                        >Return Date</label
+                      >
                       <input type="date" class="form-control" id="inputCity" />
                     </div>
                     <div class="col-md-3">
-                      <label for="inputState" class="form-label">Passengers</label>
+                      <label for="inputState" class="form-label"
+                        >Passengers</label
+                      >
                       <select id="inputState" class="form-select">
                         <option selected>1</option>
                         <option>2</option>
@@ -388,9 +397,7 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <button  class="btn btn-primary submit">
-                        NEXT
-                      </button>
+                      <button class="btn btn-primary submit">NEXT</button>
                     </div>
                   </form>
                 </div>
@@ -408,11 +415,15 @@
                         placeholder="City Airport or Name" />
                     </div>
                     <div class="col-md-6">
-                      <label for="inputCityDepartDate" class="form-label">Depart Date</label>
+                      <label for="inputCityDepartDate" class="form-label"
+                        >Depart Date</label
+                      >
                       <input type="date" class="form-control" id="inputCity" />
                     </div>
                     <div class="col-md-6">
-                      <label for="inputState" class="form-label">Passengers</label>
+                      <label for="inputState" class="form-label"
+                        >Passengers</label
+                      >
                       <select id="inputState" class="form-select">
                         <option selected>1</option>
                         <option>2</option>
@@ -429,9 +440,7 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <button  class="btn btn-primary submit">
-                        NEXT
-                      </button>
+                      <button class="btn btn-primary submit">NEXT</button>
                     </div>
                   </form>
                 </div>
@@ -442,7 +451,9 @@
             <div>
               <div class="overlay">
                 <h3 class="card-htext">Collect Your Miles</h3>
-                <h4 class="card-text">and get discounts next flights with our card</h4>
+                <h4 class="card-text">
+                  and get discounts next flights with our card
+                </h4>
                 <a href="#" class="card-btn">Get Card</a>
               </div>
             </div>
@@ -452,8 +463,103 @@
       <!-- Book Flight Ends -->
 
       <!-- Destintions Starts -->
-      <div class="destinations container-fluid px -lg-5 px-md-2 px-sm-0 px-0">
-        wowo
+      <div
+        class="destinations container-fluid px-lg-5 mt-5 px-md-2 px-sm-0 px-0">
+        <div class="row">
+          <div class="col-md-5 col-sm-12 col-12 d-flex align-items-center">
+            <div>
+              <h4 class="">What You will Get</h4>
+              <h2 class="">Popular Destinations</h2>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                reprehenderit iure ut iste eligendi nisi harum provident illum,
+                voluptas repellat necessitatibus alias, similique nihil aliquam,
+                deserunt dolore id officiis. Et excepturi dicta nihil eos quis,
+                dolor qui earum enim totam?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12 col-12">
+            <div>
+              <div
+                class="carousel"
+                data-flickity='{ "freeScroll": true, "wrapAround": true,"autoPlay" : true }'>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Paris - Barcelona</h4>
+                      <p>Duration : 2 hours 45 min</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Hamburg - Stockhulm</h4>
+                      <p>Duration : 1 hours 30 mins</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Benjil - Nepal</h4>
+                      <p>Duration : 2 hours 45 mins</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Milan - Stockholm</h4>
+                      <p>Duration : 1 hours 45 mins</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>London - Moscow</h4>
+                      <p>Duration : 2 hours</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Madrid - Prague</h4>
+                      <p>Duration : 2 hours 15 mins</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Vienna - Rome</h4>
+                      <p>Duration : 3 hours 35 mins</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="overlay">
+                    <div
+                      class="info d-flex flex-column align-items-center justify-content-center">
+                      <h4>Nigeria - South Africa</h4>
+                      <p>Duration : 2 hours 45 mins</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Destintions Ends -->
     </main>
@@ -462,6 +568,7 @@
   <script src="static/js/script.js"></script>
   <script src="static/js/bootstrap.bundle.min.js"></script>
   <script src="static/js/aos.js"></script>
+  <script src="static/js/flickity.pkgd.min.js"></script>
   <script>
     AOS.init();
   </script>

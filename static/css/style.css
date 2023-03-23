@@ -407,3 +407,96 @@ nav {
 .book .card-btn:hover {
   background-color: rgba(0, 0, 0, 0);
 }
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  border-radius: 20px;
+}
+
+.carousel-cell:nth-child(1){
+  background-image: url('../img/City/city_01-768x768.jpg');
+}
+
+.carousel-cell:nth-child(2){
+  background-image: url('../img/City/city_02-768x768.jpg');
+}
+
+.carousel-cell:nth-child(3){
+  background-image: url('../img/City/city_03-768x768.jpg');
+}
+.carousel-cell:nth-child(4){
+  background-image: url('../img/City/city_04-768x768.jpg');
+}
+.carousel-cell:nth-child(5){
+  background-image: url('../img/City/city_05-768x768.jpg');
+}
+.carousel-cell:nth-child(6){
+  background-image: url('../img/City/city_06-768x768.jpg');
+}
+.carousel-cell:nth-child(7){
+  background-image: url('../img/City/city_07-768x768.jpg');
+}
+.carousel-cell:nth-child(8){
+  background-image: url('../img/City/city_08-768x768.jpg');
+}
+.carousel-cell:hover .info{
+ transform: scale(1.1);
+ transition: .5s;
+ transform: translateY(-50px);
+ background-color: white;
+}
+.carousel-cell .overlay{
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-cell:hover .overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+.info{
+  width:80%;
+  height: 120px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.721);
+  top: 300px auto;
+  position: relative;
+  top: 70%;
+  margin: 0 auto;
+  transition: .5s;
+}
+.destinations .info h4{
+  font-family: var(--font1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.destinations .info p{
+  font-family: var(--font1);
+  font-weight: 700;
+}
+.destinations .row .col-12:nth-child(1){
+  height: fit-content;
+  padding: 30px;
+}
+.destinations .row .col-12:nth-child(1) h4{
+  font-size: 1.5em;
+  font-family: var(--font1);
+  color: black;
+}
+.destinations .row .col-12:nth-child(1) h2{
+  font-size: 3.0em;
+  font-family: var(--font1);
+  color: black;
+}
+.destinations .row .col-12:nth-child(1) p{
+  font-size: 1.5em;
+  font-family: var(--font1);
+  color: black;
+}
