@@ -23,6 +23,7 @@
       href="static/img/favicon.png"
       type="image/x-icon" />
     <link rel="stylesheet" href="static/css/aos.css" />
+    <link rel="stylesheet" href="static/css/animations.css">
   </head>
   <body>
     <nav class="navbar navbar-dark fixed-top navbar-expand-md mx-auto">
@@ -69,7 +70,7 @@
               </li>
             </ul>
             <div class="book-Now justify-content-end align-items-center d-flex">
-              <a href="#" class="book-now-btn mx-auto"> Book Now </a>
+              <a href="#" class="book-now-btn mx-auto heartbeat"> Book Now </a>
             </div>
           </div>
         </div>
@@ -263,7 +264,7 @@
       <!-- Stats Starts -->
       <div class="stats container-fluid px-lg-5 px-md-2 px-sm-0 px-0">
         <div class="row">
-          <div class="col-md-3 col-12">
+          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="300" data-speed="200">0</span
@@ -272,7 +273,7 @@
               <p class="stats-text">Professional Pilots</p>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="10" data-speed="10">0</span>k+
@@ -280,7 +281,7 @@
               <p class="stats-text">Passengers Carried</p>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="320" data-speed="200"></span>
@@ -288,7 +289,7 @@
               <p class="stats-text">World Airports</p>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
             <div>
               <p class="number">
                 <span class="counter" data-count="400" data-speed="200">0</span>
@@ -305,7 +306,7 @@
         <h4 class="px-3 px-md-0">GET YOUR FLIGHT</h4>
           <h2 class="px-3 px-md-0">Online request for private flight</h2>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-7 px-md-0 px-4">
+          <div class="col-12 col-md-12 col-lg-7 px-md-3 px-4">
             <div>
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -319,7 +320,7 @@
                     role="tab"
                     aria-controls="home"
                     aria-selected="true">
-                    ONE WAY TRIP
+                    Round Trip
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -332,7 +333,7 @@
                     role="tab"
                     aria-controls="profile"
                     aria-selected="false">
-                    Round Trip
+                    One Way Trip
                   </button>
                 </li>
               </ul>
@@ -380,7 +381,7 @@
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <label for="inputState" class="form-label">Passengers</label>
+                      <label for="inputState" class="form-label">Luggage</label>
                       <select id="inputState" class="form-select">
                         <option selected>Economy</option>
                         <option>VIP</option>
@@ -398,17 +399,63 @@
                   id="profile"
                   role="tabpanel"
                   aria-labelledby="profile-tab">
-                  profile
+                  <form class="row g-3">
+                    <div class="col-md-6 col-12">
+                      <label for="inputEmail4" class="form-label">FROM</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City Airport or Name" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCityDepartDate" class="form-label">Depart Date</label>
+                      <input type="date" class="form-control" id="inputCity" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputState" class="form-label">Passengers</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputState" class="form-label">Luggage</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Economy</option>
+                        <option>VIP</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <button  class="btn btn-primary submit">
+                        NEXT
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div></div>
+          <div class="col-12 col-md-12 col-lg-4 mt-4 mt-lg-0 px-md-3 px-4">
+            <div>
+              <div class="overlay">
+                <h3 class="card-htext">Collect Your Miles</h3>
+                <h4 class="card-text">and get discounts next flights with our card</h4>
+                <a href="#" class="card-btn">Get Card</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- Book Flight Ends -->
+
+      <!-- Destintions Starts -->
+      <div class="destinations container-fluid px -lg-5 px-md-2 px-sm-0 px-0">
+        
+      </div>
+      <!-- Destintions Ends -->
     </main>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>

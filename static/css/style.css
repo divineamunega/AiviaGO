@@ -299,17 +299,15 @@ nav {
   background-color: rgba(0, 0, 0, 0.9);
   padding-bottom: 100px;
 }
-.book .col-12 > div:nth-child(1) {
+.book .col-12:nth-child(1) > div {
   background-color: white;
-  padding: 50px 20px;
+  padding: 100px 20px;
   border-radius: 10px;
 }
 .book .nav .nav-link {
   font-family: var(--font1);
   font-weight: 700;
   color: gold;
-}
-.book .nav .active {
 }
 
 .book h4,
@@ -318,10 +316,12 @@ nav {
   text-transform: uppercase;
   color: white;
 }
+
 .book h4 {
   font-weight: 800;
   padding-top: 100px;
 }
+
 .book h2 {
   font-weight: 600;
 }
@@ -335,29 +335,75 @@ nav {
   font-weight: 900;
   color: black;
   text-transform: uppercase;
+  margin: 0 !important;
 }
 .book .form-label,
 .book .form-control,
-.book.form-select {
+.book .form-select {
   border-radius: 30px !important;
+  height: 50px;
+  margin: 0 !important;
 }
 .book .form-control:focus,
 .book .form-control:focus,
 .book .form-select:focus {
-  box-shadow: 1px 1px 5px 0px
-   rgba(0, 0, 0, 0.453) !important;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.453) !important;
   border: 1px solid gold !important;
 }
-.book .submit{
+.book .submit {
   background-color: gold;
   border: 1px solid gold;
+  font-family: var(--font1);
+  font-weight: 700;
+  padding: 5px 30px !important;
+  margin-top: 20px;
+}
+.book .submit::after {
+  content: ">";
 }
 
-.book .submit:hover{
+.book .submit:hover {
   background-color: white;
   border: 1px solid gold;
   color: gold;
 }
-.book .submit:hover::after{
-  content: '>';
+.book .submit:hover::after {
+  content: "-->";
+}
+
+.book .col-12:nth-child(2) > div {
+  height: 550px;
+  background-color: white;
+  border-radius: 10px;
+  background-image: url("../img/special-bg.png");
+}
+.book .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.book .card-htext {
+  font-family: var(--font1);
+  font-size: 3em;
+  color: gold !important;
+  text-align: center;
+  margin: 0 !important;
+}
+.book .card-text {
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+.book .card-btn {
+  padding: 5px 25px;
+  background-color: gold;
+  color: white;
+  border: 1px solid gold;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.book .card-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
