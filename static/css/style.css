@@ -509,11 +509,11 @@ nav {
   height: calc(var(--width) * 3.7);
 }
 .faq h2 {
-  font-family: var(--font1);
+  font-family: var(--brand-font);
   font-size: 3em;
 }
 .faq h3 {
-  font-family: var(--font1);
+  font-family: var(--brand-font);
   font-size: 2em;
 }
 .faq .btn-primary {
