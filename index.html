@@ -22,6 +22,11 @@
       rel="shortcut icon"
       href="static/img/favicon.png"
       type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="static/css/aos.css" />
     <link rel="stylesheet" href="static/css/animations.css" />
     <link rel="stylesheet" href="static/css/flickity.min.css" />
@@ -58,16 +63,21 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center flex-grow-1">
               <li class="nav-item mx-lg-3 mx-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#carouselId"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-lg-3 mx-auto">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item mx-lg-3 mx-auto">
+                <a class="nav-link" aria-current="page" href="#book">Contact</a>
               </li>
               <li class="nav-item mx-lg-3 mx-auto">
                 <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item mx-lg-3 mx-auto">
-                <a class="nav-link" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
             <div class="book-Now justify-content-end align-items-center d-flex">
@@ -183,7 +193,9 @@
       </div>
 
       <!-- Comfort Section Starts -->
-      <div class="container-fluid comfort px-lg-5 px-md-2 px-sm-0 px-0">
+      <div
+        class="container-fluid comfort px-lg-5 px-md-2 px-sm-0 px-0"
+        id="about">
         <h4 class="text-center">Jet Comfort</h4>
         <h2 class="text-center">Discover Charter Benefits</h2>
         <p class="text-center">
@@ -227,11 +239,7 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="col-md-6 col-12"
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine">
+                <div class="col-md-6 col-12">
                   <div>
                     <img src="static/img/schedule-icon.png" alt="" />
                     <h3>Personal Schedule</h3>
@@ -241,11 +249,7 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="col-md-6 col-12"
-                  data-aos="fade-left"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine">
+                <div class="col-md-6 col-12">
                   <div>
                     <img src="static/img/iconairport.png" alt="" />
                     <h3>Many Airports</h3>
@@ -263,7 +267,12 @@
       <!-- Comfort Section Ends -->
 
       <!-- Stats Starts -->
-      <div class="stats container-fluid px-lg-5 px-md-2 px-sm-0 px-0">
+      <div
+        class="stats container-fluid px-lg-5 px-md-2 px-sm-0 px-0"
+        class="col-md-6 col-12"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="row">
           <div
             class="col-lg-3 col-sm-6 my-4 col-12 mx-auto d-flex flex-column align-items-center">
@@ -305,9 +314,10 @@
         </div>
       </div>
       <!-- Stats End -->
+  
 
       <!-- Book Flight Starts -->
-      <div class="book container-fluid px-lg-5 px-md-2 px-sm-0 px-0 mt-5">
+      <div class="book container-fluid px-lg-5 px-md-2 px-sm-0 px-0" id="book">
         <h4 class="px-3 px-md-0">GET YOUR FLIGHT</h4>
         <h2 class="px-3 px-md-0">Online request for private flight</h2>
         <div class="row">
@@ -467,6 +477,8 @@
       <!-- Destintions Starts -->
       <div
         class="destinations container-fluid px-lg-5 mt-5 px-md-2 px-sm-0 px-0">
+        <h3 class="text-center">Our Gallery</h3>
+        <h5 class="text-center">Explore our rich and inovative gallery</h5>
         <div class="row">
           <div class="col-md-5 col-sm-12 col-12 d-flex align-items-center">
             <div>
@@ -482,9 +494,9 @@
             </div>
           </div>
           <div class="col-md-7 col-sm-12 col-12">
-            <div data-aos="flip-left">
+            <div data-aos="fade-right">
               <div
-                class="carousel"
+                class="carousel px-3"
                 data-flickity='{ "freeScroll": true, "wrapAround": true,"autoPlay" : true }'>
                 <div class="carousel-cell">
                   <div class="overlay">
@@ -564,6 +576,41 @@
         </div>
       </div>
       <!-- Destintions Ends -->
+      <div class="pictures container-fluid px-lg-5 px-md-2 px-sm-0 px-0 mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery3.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery5.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery4.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+            <div class="pic-cont">
+              <img src="static/img/gallery/gallery2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Faqs -->
       <div class="continer-fluid faq px-lg-5 px-md-2 px-sm-1 px-0">
         <h2 class="text-center mt-4">FAQs</h2>
@@ -696,14 +743,204 @@
         </div>
       </div>
       <!-- Faqs Ends -->
-      <div class="testimoials container-flud px-lg-5 px-md-2 px-sm-1 px-0">
-        <h2>What our customers are saying about us</h2>
-        <div class="row">
-          
+      <div class="testimonials container-fluid px-0">
+        <div class="overlay px-lg-5 py-5 px-md-2 px-sm-1 px-0">
+          <h2 class="">What our customers are saying about us</h2>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <div
+                id="carouselExample"
+                class="carousel slide mx-auto carousel-dark">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="pic-cont"></div>
+                    <p class="rating">
+                      &bigstar; &bigstar; &bigstar; &bigstar; &bigstar;
+                    </p>
+                    <div class="text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique aspernatur dicta nulla quas. Nam, repellendus
+                        consequuntur. Cupiditate molestias unde quod, minima ab
+                        debitis doloremque, ad esse tempore ratione
+                        necessitatibus consequatur?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="pic-cont"></div>
+                    <p class="rating">
+                      &bigstar; &bigstar; &bigstar; &bigstar; &bigstar;
+                    </p>
+                    <div class="text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique aspernatur dicta nulla quas. Nam, repellendus
+                        consequuntur. Cupiditate molestias unde quod, minima ab
+                        debitis doloremque, ad esse tempore ratione
+                        necessitatibus consequatur?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="pic-cont"></div>
+                    <p class="rating">
+                      &bigstar; &bigstar; &bigstar; &bigstar; &bigstar;
+                    </p>
+                    <div class="text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique aspernatur dicta nulla quas. Nam, repellendus
+                        consequuntur. Cupiditate molestias unde quod, minima ab
+                        debitis doloremque, ad esse tempore ratione
+                        necessitatibus consequatur?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Aptech Ota, Sango Ota, Ogun State</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>07045949572</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>aviago@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html" class="head">
+                    Avia- <span style="color: gold">Go</span>
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2023, All Right Reserved
+                  <a href="https://codepen.io/anupkumar92/">Divine</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="static/js/script.js"></script>
   <script src="static/js/bootstrap.bundle.min.js"></script>
