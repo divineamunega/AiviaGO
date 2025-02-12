@@ -1,7 +1,7 @@
 :root {
   --font1: "Roboto Condensed", sans-serif;
   --brand-font: "Merriweather", serif;
-  --color1: RGB(235,218,118);
+  --color1: rgb(255, 218, 0);
 }
 nav {
   /* background-color: rgba(0, 0, 0, 0.455);  */
